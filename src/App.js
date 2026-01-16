@@ -547,9 +547,8 @@ const ServicesSection = ({ services }) => {
   };
 
   // Group services by category
-  const securityServices = services.filter(s => s.category === 'security' || !s.category);
+   const securityServices = services.filter(s => s.category === 'security' || !s.category);
   const devServices = services.filter(s => s.category === 'development');
-
   return (
     <section id="services" className="py-24 md:py-32 bg-cyber-gray/30 relative" data-testid="services-section">
       <div className="max-w-7xl mx-auto px-6">
